@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+* {
+    font-family: 'Roboto Slab', serif;
+    background-color: #fafcff ;
+    color: #dee0e3;
+}
+
+.header-section {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    margin-top: 3em;
+}
+
+.header-section h2:first-child {
+    font-weight: lighter;
+}
+
+.header-section h2:nth-child(2) {
+    color: black
+}
+
+.header-section p {
+    font-size: 0.9em;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(6, 120px [col-start]);
+    grid-template-rows: repeat(4, 100px [col-start]);
+    column-gap: 10px;
+    row-gap: 30px;
+    margin-top: 2em;
+    width: 800px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-item{
+    box-shadow: 3px 3px 4px 4px #ccc;
+    margin: 10px 5px;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 10px 15px;
+    border-radius: 0.5em;
+    border-top: 4px solid;
+}
+
+
+.card-item .image-icon{
+    align-self: flex-end;
+}
+
+.content h4{
+    color: black;
+}
+
+.content p {
+    text-align: left;
+    font-size: 0.9em;
+}
+
+#supervisor {  
+    border-top-color:lightseagreen;
+}
+
+#team-builder  {  
+    border-top-color: red;
+}
+
+#calculator {  
+    border-top-color: rgb(0, 102, 255);
+}
+
+#karma {  
+    border-top-color: yellow
+}
+
+.supervisor {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.team-builder {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.calculator {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.karma{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+
+@media (max-width: 620px) {
+    .header-section {
+        width: 300px;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card-item {
+        height: 15em;
+    }
+}
